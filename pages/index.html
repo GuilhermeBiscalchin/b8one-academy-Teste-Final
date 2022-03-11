@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>b8one Academy</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+    rel="stylesheet"
+  />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1 class="text--container">Olá,tudo bem?👋</h1>
+        <p class="text__sub--container">
+          Vamos decolar para grandes dias de vendas.
+        </p>
+
+        <form class="formulario" method="post" >
+          <div class="container-formulario">
+            <label for="email" class="text__input-container">Seu E-mail</label>
+            <input
+            required="required"
+              type="email"
+              name="email"
+              id="email"
+              class="input--container "
+              placeholder="exemplo@email.com"
+              autofocus
+            />
+            <span class="input-mensagem--erro">Este e-mail não existe, você tem outro?</span>
+
+            <label for="senha" class="text__input-container">Sua Senha</label>
+            <input
+            required
+              type="password"
+              name="senha"
+              id="senha"
+              class="input--container"
+              placeholder="Digite sua senha"
+            />
+        
+            <div class="container--check">
+              <input
+                type="checkbox"
+                name="check"
+                id="check"
+                checked
+                class="input--checkbox"
+              /><label for="check" class="check--text">Manter conectado</label>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text__esqueceu--container"
+                >Esqueci minha senha</a
+              >
+            </div>
+  
+            <button type="submit" class="btn--container js-btn"><a href="#" class="btn--container">Entrar</a></button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

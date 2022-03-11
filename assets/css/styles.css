@@ -1,0 +1,206 @@
+:root {
+  --background: #142159;
+  --backAlter: #ffffff;
+  --font: #000000;
+  --fontAlter: #555555;
+  --fontInput: #333333;
+  --backbtn: #425dc7;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 80px 504px 80px 504px;
+}
+
+.container {
+  height: 500px;
+  background-color: var(--backAlter);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text--container {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--font);
+  /* topo | direita | inferior | esquerda */
+  margin: 48px 32px 0 48px;
+}
+
+.text__sub--container {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: var(--fontAlter);
+  /* topo | direita | inferior | esquerda */
+  margin: 8px 32px 0 48px;
+  
+}
+
+.container-formulario {
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+}
+
+.text__input-container {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: var(--fontInput);
+  padding: 8px;
+}
+
+.input--container {
+  width: 336px;
+  height: 48px;
+  background-color: var(--backAlter);
+  border: 1px solid var(--fontAlter);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.input--container::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.005em;
+  /* vertical | horizontal */
+  margin: 12px 16px;
+  color: var(--fontAlter);
+}
+
+.container--check {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.input--checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.check--text {
+  margin-right: 32px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  color: var(--font);
+  text-align: left;
+}
+
+.text__esqueceu--container {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: -0.005em;
+  text-decoration-line: underline;
+  color: var(--backbtn);
+}
+
+.btn--container {
+  width: 336px;
+  height: 48px;
+  background-color: var(--backbtn);
+  border-radius: 8px;
+  color: var(--backAlter);
+}
+
+/* Validação*/
+.input-mensagem--erro{
+  margin-top: 8px;
+  margin-left: 10px;
+  font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+  color: #F03460;
+  display: none;
+}
+
+.input-container--invalido{
+  border:1px solid #F03460;
+}
+
+/*Mobile*/
+
+@media screen and (max-width:768px ) {
+      
+   .main{
+     /* vertical | horizontal */
+     padding: 106px 16px;   
+   }
+
+   .container{
+     width: 328px;
+     height: 428px;
+  
+   }
+
+   .text--container{
+    /* topo | direita | inferior | esquerda */
+    margin: 32px 16px 8px 16px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+     
+   }
+
+   .text__sub--container{
+     
+     /* vertical | horizontal */
+    margin: 0 16px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+
+   }
+   .container-formulario{
+     padding: 0;
+   }
+
+   .text__input-container{
+    padding: 0;
+     /* topo | direita | inferior | esquerda */
+     margin: 16px 0 8px 16px;
+  
+   }
+
+   .input--container,.btn--container{
+     width: 296px;
+   }
+   
+   .input--container,.input-mensagem--erro,.btn--container{
+     margin-left: 16px;
+   }
+   
+   .container--check{
+     justify-content: center;
+     gap: 8px;
+   }
+
+   .check--text{
+     margin-right: 0;
+   }
+  
+}
